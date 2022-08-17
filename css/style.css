@@ -168,7 +168,9 @@ img {
 }
 
 header {
-  background-color: #54010f;
+  background-image: url(../img/ver\ conteiner.jpg);
+  background-size: auto;
+  background-attachment: scroll;
   padding: 0, 5rem;
   position: sticky;
   top: 0;
@@ -194,7 +196,7 @@ header {
 }
 
 .intro-section {
-  background-image: radial-gradient(rgb(190, 185, 185), rgb(128, 31, 47));
+  background-color: #6d696a;
   padding: 1rem 0 0 0;
   height: 100%;
   width: 100%;
@@ -207,14 +209,13 @@ header {
   font-weight: 400;
 }
 
-.display-2--intro {
+.display-2--intro, .display-2--description {
   font-weight: 700;
   display: inline-block;
 }
 
 .display-2--description {
   font-size: 2.4rem;
-  display: inline-block;
   margin-top: 1.2rem;
 }
 
@@ -225,7 +226,7 @@ header {
 
 footer {
   padding-top: 2rem;
-  background-color: rgb(99, 2, 18);
+  background-color: rgb(34, 33, 33);
   color: whitesmoke;
   text-align: center;
 }

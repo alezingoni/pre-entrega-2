@@ -8,8 +8,13 @@
   margin: 0 auto;
   max-width: 1320px;
 }
+@mixin backg-image {
+  background-size: auto;
+  background-attachment: scroll;
+}
 header {
-  background-color: #54010f;
+  background-image: url(../img/ver\ conteiner.jpg);
+  @include backg-image;
   padding: 0, 5rem;
   position: sticky;
   top: 0;
@@ -35,7 +40,7 @@ header {
 }
 
 .intro-section {
-  background-image: radial-gradient(rgb(190, 185, 185), rgb(128, 31, 47));
+  background-color: map-get($background-color, color1);
   padding: 1rem 0 0 0;
   height: 100%;
   width: 100%;
@@ -52,8 +57,8 @@ header {
   display: inline-block;
 }
 .display-2--description {
+  @extend.display-2--intro;
   font-size: 2.4rem;
-  display: inline-block;
   margin-top: 1.2rem;
 }
 .img-box {
@@ -63,7 +68,7 @@ header {
 
 footer {
   padding-top: 2rem;
-  background-color: rgb(99, 2, 18);
+  background-color: map-get($footer-color, color2);
   color: whitesmoke;
   text-align: center;
 }
