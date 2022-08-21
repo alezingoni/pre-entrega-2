@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contacto y Ubicación de las oficinas de CriptoAle"/>
+    <meta name="keywords" content="Contacto CriptoAle, Oficinas CriptoAle, Palermo, Argentina, Buenos Aires">
+    <meta name="author" content="Alejandro Zingoni"/>
     <link rel="stylesheet" href="../css/style.css" />
     <title>Contacto</title>
     <script
@@ -48,40 +51,26 @@
       <section id="home" class="intro-section">
         <div class="main__contacto">
           <h1>Información de contacto</h1>
-          <div class="container-form intro">
-            <div class="info-form">
-              <h2>Contáctanos</h2>
-              <p>Envianos un mensaje, nos contactaremos a la brevedad</p>
+          <div class="container">
+            <form action="#" target="" method="get" name="formDatosPersonales">
 
-              <a href="#"><i class="fa fa-phone"></i> +54 11 6549 9058</a>
-              <a href="#"><i class="fa fa-envelope"></i> criptoale@gmail.com</a>
-              <a href="#"
-                ><i class="fa fa-map-marked"></i> Buenos Aires, Argentina</a
-              >
-            </div>
-            <form action="#" autocomplete="off">
-              <input
-                type="text"
-                name="nombre"
-                placeholder="Tu Nombre"
-                class="campo"
-              />
-              <input
-                type="emal"
-                name="email"
-                placeholder="Tu Email"
-                class="campo"
-              />
-              <textarea name="mensaje" placeholder="Tu Mensaje..."></textarea>
-              <input
-                type="submit"
-                name="enviar"
-                value="Enviar Mensaje"
-                class="btn-enviar"
-              />
+              <label for="nombre">Nombre</label>
+              <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre"/>
+            
+              <label for="apellidos">Apellidos</label>
+              <input type="text" name="apellidos" id="apellidos" placeholder="Escribe tu Apellido"/>
+            
+              <label for="email" />Email</label>
+              <input type="email" name="email" id="email" placeholder="email" required />
+            
+              <label for="asunto">Asunto</label>
+              <input type ="text" name="asunto" id="asunto" placeholder="titular de la consulta"/>
+            
+              <label for="mensaje">Mensaje</label>
+              <textarea name="mensaje" for="mensaje" placeholder="describe brevemente en menos de 300 carácteres" maxlength="300"></textarea>
+              
+              <input type="submit" name="enviar" value="enviar datos"/>
             </form>
-          </div>
-
           <br />
           <br />
           <div class="ubicación">
